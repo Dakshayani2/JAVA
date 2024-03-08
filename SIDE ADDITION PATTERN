@@ -1,0 +1,24 @@
+import java.util.*;
+public class dak {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("enter rows:");
+        int r=s.nextInt();
+        System.out.print("enter coef:");
+        int c=s.nextInt();
+        for(int i = 0; i < r; i++) {
+            for(int space = 1; space < r - i; ++space) {
+                System.out.print("  ");
+            }
+
+            for(int j = 0; j <= i; j++) {
+                if (j == 0 || i == 0)
+                    c = 1;
+                else
+                    c = c * (i - j + 1) / j;
+                System.out.printf("%4d", c);
+            }
+            System.out.println();
+        }
+    }
+}
