@@ -9,7 +9,7 @@ public class LcmGcd
     }
     public static void main(String[] args) 
     {
-        Scanner input = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         System.out.print("Enter the number of elements: ");
         int n = s.nextInt();
         int[] a = new int[n];
